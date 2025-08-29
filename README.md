@@ -1,6 +1,8 @@
+## Hackintosh for ThinkPad T470 laptops with 6th gen Intel CPUs
+
 NOTE: This EFI is confirmed to boot MacOS Sonoma 14.0, however I have not tested newer versions (Sequoia, Tahoe. Ventura should work fine but I have not tested)
 
-**Specs:**
+## Specs:
 
 OpenCore Version: 1.0.5
 
@@ -19,13 +21,13 @@ Ethernet controller: Intel I219-LM
 Audio: Realtek ALC298
 
 
-**SCREENSHOTS**
+## SCREENSHOTS
 
 <img width="1920" height="1080" alt="1756424761810" src="https://github.com/user-attachments/assets/e5cb462b-5c2d-40f0-857e-8ded9935202b" />
 
 
 
-**WHAT'S NOT WORKING?**
+## WHAT'S NOT WORKING?
 
 USB-C data transfer (No idea why but charging and video output works)
 
@@ -33,7 +35,7 @@ Fingerprint reader (Will not work due to T1 emulation being impossible)
 
 Continuity (This is because of Intel wireless cards are not native in MacOS)
 
-**POST-INSTALL**
+## POST-INSTALL
 
 Disable hibernation since it doesn't work properly on hackintoshes
 ```
@@ -43,7 +45,7 @@ sudo pmset standby 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
-## My sincere thanks to**
+## My sincere thanks to
 
 - [Acidanthera](https://github.com/acidanthera)
 - [Dortania's OC guide](https://dortania.github.io/OpenCore-Install-Guide/)
