@@ -10,7 +10,7 @@ RAM: 2x16GB 2133MHz DDR4
 
 SSD: Micron 1100 Sata 256GB
 
-WiFi & Bluetooth: Intel AC-8260 (I used itlwm.kext since AirportItlwm.kext does not work on Sonoma)
+WiFi & Bluetooth: Intel AC-8260
 
 CPU: Intel Core i5-6300U
 
