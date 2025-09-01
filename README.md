@@ -45,6 +45,10 @@ sudo pmset standby 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
+
+**FOR INTEL WIFI USERS ON SEQUOIA:** 
+
+Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work, or use HeliPort + itlwm.kext
 ## My sincere thanks to
 
 - [Acidanthera](https://github.com/acidanthera)
