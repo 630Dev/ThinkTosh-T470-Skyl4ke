@@ -35,6 +35,10 @@ Fingerprint reader (Will not work due to T1 emulation being impossible)
 
 Continuity (This is because of Intel wireless cards are not native in MacOS)
 
+## PRE-INSTALL DEPLOYMENT
+
+Grab [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and generate a serial with the SMBIOS "MacBookPro13,1" (without quotes)
+
 ## POST-INSTALL
 
 Disable hibernation since it doesn't work properly on hackintoshes
@@ -45,10 +49,16 @@ sudo pmset standby 0
 sudo pmset proximitywake 0
 sudo pmset tcpkeepalive 0
 ```
+**FIX TRACKPAD RELATED ISSUES:**
+
+Open System Preferences and navigate to the Trackpad tab. from there do the following:
+
+<img width="707" height="619" alt="image" src="https://github.com/user-attachments/assets/b238a72d-808e-41fd-be13-ba7a30a5f558" />
+
 
 **FOR INTEL WIFI USERS ON SEQUOIA:** 
 
-Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work, or use HeliPort + itlwm.kext
+Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work (Make sure you are connected to the internet before you apply root patches) or use HeliPort + itlwm.kext
 ## My sincere thanks to
 
 - [Acidanthera](https://github.com/acidanthera)
