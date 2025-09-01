@@ -63,7 +63,7 @@ Open System Preferences and navigate to the Trackpad tab. from there do the foll
 <img width="707" height="619" alt="image" src="https://github.com/user-attachments/assets/b238a72d-808e-41fd-be13-ba7a30a5f558" />
 
 
-**FOR INTEL WIFI USERS ON SEQUOIA:** 
+**FIX WIFI ON SEQUOIA:** 
 
 Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work (Make sure you are connected to the internet with an ethernet cable before you apply root patches) you can skip this step if you have an Intel card and you are using HeliPort + itlwm.kext
 ## My sincere thanks to
