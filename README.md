@@ -33,15 +33,22 @@ USB-C data transfer (No idea why but charging and video output works)
 
 Fingerprint reader (Will not work due to T1 emulation being impossible)
 
-Continuity (This is because of Intel wireless cards are not native in MacOS)
+Continuity (This is because of Intel wireless cards are not native in MacOS but if you are using a Broadcom card, this should work fine)
 
 ## PRE-INSTALL DEPLOYMENT
 
 Grab [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and generate a serial with the SMBIOS "MacBookPro13,1" (without quotes)
 
+**IF YOU HAVE A BROADCOM CARD:**
+
+Grab AirportBrcmFixup.kext from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AirportBrcmFixup-v2.1.9-RELEASE.zip) and put it in EFI/OC/Kexts folder, Open the EFI/OC/config.plist file with OCAT or OpenCore Configurator, Go to Kernel > Add and delete AirportItlwm.kext and add AirportBrcmFixup.kext. Then go into DeviceProperties > Add and delete "PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)" value. After that you can save your config.plist file. 
+
 ## POST-INSTALL
 
-Disable hibernation since it doesn't work properly on hackintoshes
+**DISABLE HIBERNATION SINCE IT DOES NOT WORK ON HACKINTOSH PROPERLY:**
+
+Open up a terminal window and type the following commands one by one:
+
 ```
 sudo pmset autopoweroff 0
 sudo pmset powernap 0
@@ -58,7 +65,7 @@ Open System Preferences and navigate to the Trackpad tab. from there do the foll
 
 **FOR INTEL WIFI USERS ON SEQUOIA:** 
 
-Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work (Make sure you are connected to the internet before you apply root patches) or use HeliPort + itlwm.kext
+Grab OCLP-Mod from [here](https://github.com/laobamac/OCLP-Mod) and apply root patches for the WiFi to work (Make sure you are connected to the internet with an ethernet cable before you apply root patches) you can skip this step if you have an Intel card and you are using HeliPort + itlwm.kext
 ## My sincere thanks to
 
 - [Acidanthera](https://github.com/acidanthera)
