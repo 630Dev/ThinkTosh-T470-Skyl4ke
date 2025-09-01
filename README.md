@@ -1,6 +1,6 @@
 ## Hackintosh for ThinkPad T470 laptops with Intel Skylake CPUs
 
-NOTE: This EFI is confirmed to boot MacOS Sonoma 14.0 and MacOS Sequoia 15.3.1, Tahoe Beta also boots but the sound does not work.
+NOTE: This EFI is confirmed to boot MacOS Sonoma 14.0 and MacOS Sequoia 15.3.1, I have not tested Ventura or older. Tahoe Beta also boots but the sound does not work.
 
 ## Specs:
 
