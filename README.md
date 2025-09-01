@@ -23,8 +23,13 @@ Audio: Realtek ALC298
 
 ## SCREENSHOTS
 
+Running Sonoma:
+
 <img width="1920" height="1080" alt="1756424761810" src="https://github.com/user-attachments/assets/e5cb462b-5c2d-40f0-857e-8ded9935202b" />
 
+Running Sequoia:
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b299d3d8-4ed4-44d5-ae65-6043152806da" />
 
 
 ## WHAT'S NOT WORKING?
